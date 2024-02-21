@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css.css">
+    <title>Резюме</title>
+</head>
+<body>
+<header class="header">
+    <a href="http://localhost:63342/pythonProject29/summary/index.html?_ijt=mu0k0cagho36d06arrqhe8j74d&_ij_reload=RELOAD_ON_SAVE#">Сайт Дмитрия Баранцова</a>
+
+    <h1>Веб-разработчик</h1>
+    <img class="logo" src="media/n1.jpg" alt="фото">
+    <h2>Баранцов Дмитрий</h2>
+</header>
+<main>
+    <div class="colums">
+        <div class="resume">
+        <ul>Контакты:
+            <li>Телефон:+375-29-349-43-71</li>
+            <li>Почта: mail@mail.ru</li>
+            <li>Мессенджер: Viber</li>
+
+        </ul>
+
+        </div>
+        <div class="resume">
+        <p>Позвольте рассказать немного о себе. Хоть детство и юность мои были увлечены искусством, но всегда любил различные задачи на логику. Математика и физика давались легко.
+        Неоднократно занимал призовые места в школьной олимпиаде, а один раз даже и на городскую забежал). К своим 38 годам понял, что соскучился по обучению и всевозможным домашним задания.
+        Решил попробовать свои силы в IT. Так я оказался в Skillfactory. Сейчас без месяца год как я обучаюсь Fullstack разработчик на Python. И за это время я изучил язык Python, фреймворк Django и приступил к изучению
+            JavaScript</p>
+            <div class="portfolio">
+                <img  src="media/img_4.png" alt="фото" class="scale">
+                <img  src="media/img_7.png" alt="фото" class="scale">
+                <img  src="media/img_6.png" alt="фото" class="scale">
+                <img  src="media/img_5.png" alt="фото" class="scale">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+    <button type="button" class="collapsible">Python + </button>
+        <div class="content">
+            <img  src="media/img.png" alt="фото">
+            <p>Python — это интерпретируемый, интерактивный, объектно-ориентированный и высокоуровневый язык программирования общего назначения c динамической строгой типизацией и автоматическим управлением памятью,
+                ориентированный на повышение производительности разработчика, читаемости кода, а также на обеспечение переносимости написанных на нем программ.
+            В Python мало ключевых слов, простая структура и четко определенный синтаксис. Это позволяет быстро учить язык.</p>
+            <a class="link" href="https://github.com/BaronGalileo/expert-zip/blob/main/KrestikNolik.py" target="_blank">Игра Крестики нолики</a>
+            <a class="link" href="https://github.com/BaronGalileo/expert-zip/blob/main/MorskoyBoy2.py" target="_blank">Игра Морской бой</a>
+            <a class="link" href="https://github.com/BaronGalileo/expert-zip/blob/main/bot_1.py" target="_blank">Телеграмм-бот</a>
+        </div>
+
+
+      <button type="button" class="collapsible">Django +</button>
+      <div class="content">
+        <img src="media/img_1.png" alt="фото">
+        <p>Django — это высокоуровневый Python веб-фреймворк, который позволяет быстро создавать безопасные и поддерживаемые веб-сайты. Созданный опытными разработчиками, Django берёт на себя большую часть
+          хлопот веб-разработки, поэтому вы можете сосредоточиться на написании своего веб-приложения без необходимости изобретать велосипед.</p>
+          <a class="link" href="https://github.com/BaronGalileo/project-django/tree/main/NewsPaper" target="_blank">Учебный  новостной сайт</a>
+          <a class="link" href="https://github.com/BaronGalileo/project-django/tree/main/mmorpg" target="_blank">Доска объявлений в MMORPG</a>
+          <a class="link" href="https://github.com/BaronGalileo/E6.9.-" target="_blank">Мессенджер с Ajax</a>
+      </div>
+
+
+      <button type="button" class="collapsible">JavaScript +</button>
+      <div class="content">
+        <img src="media/img_2.png" alt="фото">
+        <p>JavaScript — это кроссплатформенный, интерпретируемый язык программирования, который используется для создания интерактивных веб-страниц и приложений. Функционал JavaScript может улучшить
+          удобство взаимодействия пользователя с веб-сайтом: от обновления ленты новостей в социальных сетях и до отображения анимации и интерактивных карт. JavaScript был создан в 1995 году
+          Бренданом Эйхом, когда тот еще был инженером в Netscape. JavaScript имеет динамическую слабую типизацию и может использоваться как для разработки на стороне клиента,
+          так и для разработки на стороне сервера.</p>
+          <a class="link" href="https://github.com/BaronGalileo/E6.9.-" target="_blank">Мессенджер с Ajax</a>
+          <a class="link" href="#" target="_blank">CSS адаптивный сайт</a>
+      </div>
+    </div>
+
+</main>
+<footer>
+    <p>© 2024 Тираж 10 000 копий</p>
+</footer>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
